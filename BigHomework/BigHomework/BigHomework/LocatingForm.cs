@@ -33,5 +33,10 @@ namespace BigHomework
         {
 
         }
+
+        private void LocatingForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

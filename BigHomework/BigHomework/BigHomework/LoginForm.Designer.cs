@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Account = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -64,20 +64,21 @@
             this.label2.Text = "密 码：";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // Account
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 25);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Account.Location = new System.Drawing.Point(235, 133);
+            this.Account.Name = "Account";
+            this.Account.Size = new System.Drawing.Size(262, 25);
+            this.Account.TabIndex = 2;
+            this.Account.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // Password
             // 
-            this.textBox2.Location = new System.Drawing.Point(235, 207);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 25);
-            this.textBox2.TabIndex = 3;
+            this.Password.Location = new System.Drawing.Point(235, 207);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(262, 25);
+            this.Password.TabIndex = 3;
+            this.Password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
@@ -96,6 +97,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("楷体", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(417, 364);
@@ -141,8 +143,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.Account);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -159,8 +161,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Account;
+        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using Model;
 
 namespace BigHomework
 {
@@ -15,6 +17,13 @@ namespace BigHomework
         public AddM_Form()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Member member = new Member();
+            IMemberManager imm = ManagerFactory.getMememberManager("");
+            imm.addMember(member);
         }
     }
 }

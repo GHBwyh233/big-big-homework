@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Model;
+using BLL;
 
 namespace BigHomework
 {
@@ -20,6 +22,23 @@ namespace BigHomework
         private void AddF_Form_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IMapManager imm = ManagerFactory.getMapManager("");
+            Map map = new Map();
+            imm.addMap(map);
         }
     }
 }

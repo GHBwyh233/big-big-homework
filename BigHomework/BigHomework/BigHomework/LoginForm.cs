@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using Util;
 
 namespace BigHomework
 {
@@ -29,14 +31,37 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //尝试按照权限登录系统
-            if (Program.status == 1)
+            IAccountManager iam = ManagerFactory.getAccountManager("");
+            string username = Account.Text.Trim();
+            string pwd = Password.Text;
+            int level;
+            if (iam.isLogin(username, pwd))
             {
-                RootForm rootForm = new RootForm();
-                this.Close();
-                rootForm.Show();
+                level = iam.getPerLevel(username);
+                //尝试按照权限登录系统
+                if (level == 1)
+                {
+                    RootForm rootForm = new RootForm();
+                    this.Close();
+                    rootForm.Show();
+                }
+                else if (level == 2)
+                {
+                    NormalForm normalForm = new NormalForm();
+                    this.Close();
+                    normalForm.Show();
+                }
+                else
+                {
+                    FamCtrForm famCtrForm = new FamCtrForm();
+                    this.Close();
+                    famCtrForm.Show();
+                }
             }
-            
+            else
+            {
+                MessageBox.Show("用户名或密码错误！");
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -59,6 +84,11 @@ namespace BigHomework
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

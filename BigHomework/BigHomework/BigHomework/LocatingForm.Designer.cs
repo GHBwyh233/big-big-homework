@@ -128,6 +128,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LocatingForm";
             this.Text = "综合查询";
+            this.Load += new System.EventHandler(this.LocatingForm_Load);
             this.ResumeLayout(false);
 
         }
