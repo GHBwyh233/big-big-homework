@@ -14,6 +14,7 @@ namespace BigHomework
 {
     public partial class AddM_Form : Form
     {
+        private int id;//管理员id
         public AddM_Form()
         {
             InitializeComponent();
@@ -22,10 +23,28 @@ namespace BigHomework
         private void button1_Click(object sender, EventArgs e)
         {
             Member member = new Member();
-            IMemberManager imm = ManagerFactory.getMememberManager("");
+            IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
+            StringBuilder sb = new StringBuilder();
             member.Name = MemberName.Text.Trim();
             member.Fatherid = imm.getFatherId(FatherName.Text.Trim());
-            //member.Birth = Birth.Value.ToString();
+            sb.Append(Birth.Value.Year.ToString());
+            sb.Append("-");
+            sb.Append(Birth.Value.Month.ToString());
+            sb.Append("-");
+            sb.Append(Birth.Value.Day.ToString());
+            member.Birth = sb.ToString();
+            member.BirthPlace = BirthPlace.Text;
+            member.Generation = Generation.Text.Trim();
+            member.Idcard = Idcard.Text;
+            if (Male.Checked)
+            {
+                member.Sex = '男';
+            }
+            else
+            {
+                member.Sex = '女';
+            }
+            member.Mapid = imm.getMapid(id);
             imm.addMember(member);
         }
 

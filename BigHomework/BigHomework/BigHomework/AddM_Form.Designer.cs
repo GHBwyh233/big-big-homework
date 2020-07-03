@@ -36,13 +36,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.MemberName = new System.Windows.Forms.TextBox();
-            this.M = new System.Windows.Forms.RadioButton();
-            this.F = new System.Windows.Forms.RadioButton();
+            this.Male = new System.Windows.Forms.RadioButton();
+            this.Female = new System.Windows.Forms.RadioButton();
             this.Generation = new System.Windows.Forms.TextBox();
-            this.BirthDay = new System.Windows.Forms.DateTimePicker();
+            this.Birth = new System.Windows.Forms.DateTimePicker();
             this.BirthPlace = new System.Windows.Forms.TextBox();
             this.FatherName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Idcard = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(311, 35);
+            this.label2.Location = new System.Drawing.Point(311, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 1;
@@ -66,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 125);
+            this.label3.Location = new System.Drawing.Point(12, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 2;
@@ -75,7 +77,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(308, 125);
+            this.label4.Location = new System.Drawing.Point(311, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 3;
@@ -84,7 +86,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 264);
+            this.label5.Location = new System.Drawing.Point(12, 183);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 15);
             this.label5.TabIndex = 4;
@@ -93,7 +95,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(311, 264);
+            this.label6.Location = new System.Drawing.Point(311, 183);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 15);
             this.label6.TabIndex = 5;
@@ -106,53 +108,53 @@
             this.MemberName.Size = new System.Drawing.Size(100, 25);
             this.MemberName.TabIndex = 6;
             // 
-            // M
+            // Male
             // 
-            this.M.AutoSize = true;
-            this.M.Location = new System.Drawing.Point(389, 35);
-            this.M.Name = "M";
-            this.M.Size = new System.Drawing.Size(43, 19);
-            this.M.TabIndex = 7;
-            this.M.TabStop = true;
-            this.M.Text = "男";
-            this.M.UseVisualStyleBackColor = true;
+            this.Male.AutoSize = true;
+            this.Male.Location = new System.Drawing.Point(389, 21);
+            this.Male.Name = "Male";
+            this.Male.Size = new System.Drawing.Size(43, 19);
+            this.Male.TabIndex = 7;
+            this.Male.TabStop = true;
+            this.Male.Text = "男";
+            this.Male.UseVisualStyleBackColor = true;
             // 
-            // F
+            // Female
             // 
-            this.F.AutoSize = true;
-            this.F.Location = new System.Drawing.Point(519, 35);
-            this.F.Name = "F";
-            this.F.Size = new System.Drawing.Size(43, 19);
-            this.F.TabIndex = 8;
-            this.F.TabStop = true;
-            this.F.Text = "女";
-            this.F.UseVisualStyleBackColor = true;
+            this.Female.AutoSize = true;
+            this.Female.Location = new System.Drawing.Point(517, 21);
+            this.Female.Name = "Female";
+            this.Female.Size = new System.Drawing.Size(43, 19);
+            this.Female.TabIndex = 8;
+            this.Female.TabStop = true;
+            this.Female.Text = "女";
+            this.Female.UseVisualStyleBackColor = true;
             // 
             // Generation
             // 
-            this.Generation.Location = new System.Drawing.Point(120, 125);
+            this.Generation.Location = new System.Drawing.Point(120, 98);
             this.Generation.Name = "Generation";
             this.Generation.Size = new System.Drawing.Size(100, 25);
             this.Generation.TabIndex = 9;
             // 
-            // BirthDay
+            // Birth
             // 
-            this.BirthDay.CustomFormat = "xxxx-xx-xx";
-            this.BirthDay.Location = new System.Drawing.Point(396, 121);
-            this.BirthDay.Name = "BirthDay";
-            this.BirthDay.Size = new System.Drawing.Size(200, 25);
-            this.BirthDay.TabIndex = 10;
+            this.Birth.CustomFormat = "xxxx-xx-xx";
+            this.Birth.Location = new System.Drawing.Point(399, 98);
+            this.Birth.Name = "Birth";
+            this.Birth.Size = new System.Drawing.Size(200, 25);
+            this.Birth.TabIndex = 10;
             // 
             // BirthPlace
             // 
-            this.BirthPlace.Location = new System.Drawing.Point(120, 261);
+            this.BirthPlace.Location = new System.Drawing.Point(120, 180);
             this.BirthPlace.Name = "BirthPlace";
             this.BirthPlace.Size = new System.Drawing.Size(100, 25);
             this.BirthPlace.TabIndex = 11;
             // 
             // FatherName
             // 
-            this.FatherName.Location = new System.Drawing.Point(413, 261);
+            this.FatherName.Location = new System.Drawing.Point(412, 180);
             this.FatherName.Name = "FatherName";
             this.FatherName.Size = new System.Drawing.Size(100, 25);
             this.FatherName.TabIndex = 12;
@@ -167,18 +169,36 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 272);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 15);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "身份证号：";
+            // 
+            // Idcard
+            // 
+            this.Idcard.Location = new System.Drawing.Point(120, 269);
+            this.Idcard.Name = "Idcard";
+            this.Idcard.Size = new System.Drawing.Size(100, 25);
+            this.Idcard.TabIndex = 15;
+            // 
             // AddM_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 567);
+            this.Controls.Add(this.Idcard);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.FatherName);
             this.Controls.Add(this.BirthPlace);
-            this.Controls.Add(this.BirthDay);
+            this.Controls.Add(this.Birth);
             this.Controls.Add(this.Generation);
-            this.Controls.Add(this.F);
-            this.Controls.Add(this.M);
+            this.Controls.Add(this.Female);
+            this.Controls.Add(this.Male);
             this.Controls.Add(this.MemberName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -204,12 +224,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox MemberName;
-        private System.Windows.Forms.RadioButton M;
-        private System.Windows.Forms.RadioButton F;
+        private System.Windows.Forms.RadioButton Male;
+        private System.Windows.Forms.RadioButton Female;
         private System.Windows.Forms.TextBox Generation;
-        private System.Windows.Forms.DateTimePicker BirthDay;
+        private System.Windows.Forms.DateTimePicker Birth;
         private System.Windows.Forms.TextBox BirthPlace;
         private System.Windows.Forms.TextBox FatherName;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox Idcard;
     }
 }

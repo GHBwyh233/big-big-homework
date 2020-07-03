@@ -22,9 +22,15 @@ namespace BigHomework
         private void button1_Click(object sender, EventArgs e)
         {
 
-            IQueryManager iqm = ManagerFactory.getQueryManager("");
-            int id = 1;
-            Member user = iqm.queryMember(id);
+            IQueryManager iqm = ManagerFactory.getQueryManager("QUeryManagerImpl");
+            int id = int.Parse(Memberid.Text);
+            Member member = iqm.queryMember(id);
+            MemberName.Text = member.Name;
+            Sex.Text = member.Sex.ToString();
+            Birth.Text = member.Birth;
+            BirthPlace.Text = member.BirthPlace;
+            Generation.Text = member.Generation;
+
         }
     }
 }

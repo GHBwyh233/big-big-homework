@@ -15,5 +15,6 @@ namespace DAL
         void addMember(Member member);//将成员实体类对象对应的成员添加进数据库
         Member getMember(string name);//通过成员姓名获取成员基本信息
         Map getMap(int id);//通过族谱id获取族谱基本信息
+        Member getMember(int id);//通过成员iid获取成员基本信息
     }
 }

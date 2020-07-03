@@ -10,18 +10,34 @@ namespace BLL
     {
         public static IAccountManager getAccountManager(string manager) 
         {
+            if (manager.Equals("AccountManagerImpl"))
+            {
+                return new AccountManagerImp();
+            }
             return null;
         }
-        public static IMapManager getMapManager(string namager)
+        public static IMapManager getMapManager(string manager)
         {
+            if (manager.Equals("MapMangerImpl"))
+            {
+                return new MapMangerImpl();
+            }
             return null;
         }
         public static IMemberManager getMememberManager(string manager)
         {
+            if (manager.Equals("MemberMangerImpl"))
+            {
+                return new MemberMangerImpl();
+            }
             return null;
         }
         public static IQueryManager getQueryManager(string manager)
         {
+            if (manager.Equals("QUeryManagerImpl"))
+            {
+                return new QUeryManagerImpl();
+            }
             return null;
         }
     }

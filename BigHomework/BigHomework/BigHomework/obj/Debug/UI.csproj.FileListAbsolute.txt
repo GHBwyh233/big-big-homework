@@ -29,3 +29,9 @@ F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomewor
 F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\BLL.pdb
 F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\Model.pdb
 F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\obj\Debug\UI.csproj.CopyComplete
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\DAL.dll
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\MySql.Data.dll
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\Google.Protobuf.dll
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\BouncyCastle.Crypto.dll
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\DAL.pdb
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\MySql.Data.xml

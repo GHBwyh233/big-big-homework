@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoM_Form));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Memberid = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.MemberName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Sex = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Birth = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.BirthPlace = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Generation = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -49,16 +49,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(39, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 15);
+            this.label1.Size = new System.Drawing.Size(113, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "请输入成员姓名：";
+            this.label1.Text = "请输入成员id：";
             // 
-            // textBox1
+            // Memberid
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 25);
-            this.textBox1.TabIndex = 1;
+            this.Memberid.Location = new System.Drawing.Point(182, 42);
+            this.Memberid.Name = "Memberid";
+            this.Memberid.Size = new System.Drawing.Size(148, 25);
+            this.Memberid.TabIndex = 1;
             // 
             // button1
             // 
@@ -79,12 +79,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "姓名：";
             // 
-            // textBox2
+            // MemberName
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 25);
-            this.textBox2.TabIndex = 4;
+            this.MemberName.Location = new System.Drawing.Point(136, 128);
+            this.MemberName.Name = "MemberName";
+            this.MemberName.Size = new System.Drawing.Size(100, 25);
+            this.MemberName.TabIndex = 4;
             // 
             // label3
             // 
@@ -95,12 +95,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "性别：";
             // 
-            // textBox3
+            // Sex
             // 
-            this.textBox3.Location = new System.Drawing.Point(403, 128);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 25);
-            this.textBox3.TabIndex = 6;
+            this.Sex.Location = new System.Drawing.Point(403, 128);
+            this.Sex.Name = "Sex";
+            this.Sex.Size = new System.Drawing.Size(100, 25);
+            this.Sex.TabIndex = 6;
             // 
             // label4
             // 
@@ -111,12 +111,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "出生日期：";
             // 
-            // textBox4
+            // Birth
             // 
-            this.textBox4.Location = new System.Drawing.Point(136, 203);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 25);
-            this.textBox4.TabIndex = 8;
+            this.Birth.Location = new System.Drawing.Point(136, 203);
+            this.Birth.Name = "Birth";
+            this.Birth.Size = new System.Drawing.Size(100, 25);
+            this.Birth.TabIndex = 8;
             // 
             // label5
             // 
@@ -127,12 +127,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "出生地：";
             // 
-            // textBox5
+            // BirthPlace
             // 
-            this.textBox5.Location = new System.Drawing.Point(403, 203);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 25);
-            this.textBox5.TabIndex = 10;
+            this.BirthPlace.Location = new System.Drawing.Point(403, 203);
+            this.BirthPlace.Name = "BirthPlace";
+            this.BirthPlace.Size = new System.Drawing.Size(100, 25);
+            this.BirthPlace.TabIndex = 10;
             // 
             // label6
             // 
@@ -143,30 +143,30 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "字辈：";
             // 
-            // textBox6
+            // Generation
             // 
-            this.textBox6.Location = new System.Drawing.Point(136, 283);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 25);
-            this.textBox6.TabIndex = 12;
+            this.Generation.Location = new System.Drawing.Point(136, 283);
+            this.Generation.Name = "Generation";
+            this.Generation.Size = new System.Drawing.Size(100, 25);
+            this.Generation.TabIndex = 12;
             // 
             // LoM_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox6);
+            this.ClientSize = new System.Drawing.Size(745, 523);
+            this.Controls.Add(this.Generation);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.BirthPlace);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Birth);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Sex);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.MemberName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Memberid);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoM_Form";
@@ -179,17 +179,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Memberid;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox MemberName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Sex;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Birth;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox BirthPlace;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Generation;
     }
 }

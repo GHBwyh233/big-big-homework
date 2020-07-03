@@ -11,5 +11,6 @@ namespace BLL
     {
         void addMember(Member member);//添加成员
         int getFatherId(string name);//通过父亲姓名获取父亲id
+        int getMapid(int id);//通过成员id来获取族谱的id
     }
 }

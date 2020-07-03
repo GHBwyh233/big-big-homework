@@ -10,6 +10,10 @@ namespace DAL
     {
         public static IDBUtil getDBUtil(string dbUtil) //用于获取IDBUtil接口实现类对象，通过输入相应的字符串
         {
+            if ("DBUtilImplementer".Equals(dbUtil)) 
+            {
+                return new DBUtiIlmplementer();
+            }
             return null;
         }
     }

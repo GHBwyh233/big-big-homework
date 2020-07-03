@@ -31,30 +31,34 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            IAccountManager iam = ManagerFactory.getAccountManager("");
+            IAccountManager iam = ManagerFactory.getAccountManager("AccountManagerImpl");
             string username = Account.Text.Trim();
             string pwd = Password.Text;
             int level;
             if (iam.isLogin(username, pwd))
             {
                 level = iam.getPerLevel(username);
+                
                 //尝试按照权限登录系统
                 if (level == 1)
                 {
+                    //MessageBox.Show(level.ToString());
                     RootForm rootForm = new RootForm();
-                    this.Close();
-                    rootForm.Show();
+                    this.Hide();
+                    rootForm.ShowDialog();
+
+                    
                 }
-                else if (level == 2)
+                else if (level == 3)
                 {
                     NormalForm normalForm = new NormalForm();
-                    this.Close();
+                    this.Hide();
                     normalForm.Show();
                 }
                 else
                 {
                     FamCtrForm famCtrForm = new FamCtrForm();
-                    this.Close();
+                    this.Hide();
                     famCtrForm.Show();
                 }
             }
