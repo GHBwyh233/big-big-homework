@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model;
 
-namespace Util
+namespace BLL
 {
-    public class Class1
+    public interface IQueryManager
     {
+        Member queryMember(int id);
     }
 }

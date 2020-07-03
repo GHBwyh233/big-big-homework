@@ -16,5 +16,10 @@ namespace BigHomework
         {
             InitializeComponent();
         }
+
+        private void DelF_Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

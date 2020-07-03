@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IMapManager.cs" />
     <Compile Include="IMemberManager.cs" />
+    <Compile Include="IQueryManager.cs" />
     <Compile Include="ManagerFactory.cs" />
     <Compile Include="IAccountManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

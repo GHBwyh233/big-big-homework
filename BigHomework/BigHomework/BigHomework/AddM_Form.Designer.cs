@@ -35,13 +35,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.MemberName = new System.Windows.Forms.TextBox();
+            this.M = new System.Windows.Forms.RadioButton();
+            this.F = new System.Windows.Forms.RadioButton();
+            this.Generation = new System.Windows.Forms.TextBox();
+            this.BirthDay = new System.Windows.Forms.DateTimePicker();
+            this.BirthPlace = new System.Windows.Forms.TextBox();
+            this.FatherName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -99,62 +99,63 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "父亲姓名：";
             // 
-            // textBox1
+            // MemberName
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 6;
+            this.MemberName.Location = new System.Drawing.Point(120, 20);
+            this.MemberName.Name = "MemberName";
+            this.MemberName.Size = new System.Drawing.Size(100, 25);
+            this.MemberName.TabIndex = 6;
             // 
-            // radioButton1
+            // M
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(389, 35);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(43, 19);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "男";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.M.AutoSize = true;
+            this.M.Location = new System.Drawing.Point(389, 35);
+            this.M.Name = "M";
+            this.M.Size = new System.Drawing.Size(43, 19);
+            this.M.TabIndex = 7;
+            this.M.TabStop = true;
+            this.M.Text = "男";
+            this.M.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // F
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(519, 35);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(43, 19);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "女";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.F.AutoSize = true;
+            this.F.Location = new System.Drawing.Point(519, 35);
+            this.F.Name = "F";
+            this.F.Size = new System.Drawing.Size(43, 19);
+            this.F.TabIndex = 8;
+            this.F.TabStop = true;
+            this.F.Text = "女";
+            this.F.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // Generation
             // 
-            this.textBox2.Location = new System.Drawing.Point(120, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 25);
-            this.textBox2.TabIndex = 9;
+            this.Generation.Location = new System.Drawing.Point(120, 125);
+            this.Generation.Name = "Generation";
+            this.Generation.Size = new System.Drawing.Size(100, 25);
+            this.Generation.TabIndex = 9;
             // 
-            // dateTimePicker1
+            // BirthDay
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(396, 121);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 25);
-            this.dateTimePicker1.TabIndex = 10;
+            this.BirthDay.CustomFormat = "xxxx-xx-xx";
+            this.BirthDay.Location = new System.Drawing.Point(396, 121);
+            this.BirthDay.Name = "BirthDay";
+            this.BirthDay.Size = new System.Drawing.Size(200, 25);
+            this.BirthDay.TabIndex = 10;
             // 
-            // textBox3
+            // BirthPlace
             // 
-            this.textBox3.Location = new System.Drawing.Point(120, 261);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 25);
-            this.textBox3.TabIndex = 11;
+            this.BirthPlace.Location = new System.Drawing.Point(120, 261);
+            this.BirthPlace.Name = "BirthPlace";
+            this.BirthPlace.Size = new System.Drawing.Size(100, 25);
+            this.BirthPlace.TabIndex = 11;
             // 
-            // textBox4
+            // FatherName
             // 
-            this.textBox4.Location = new System.Drawing.Point(413, 261);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 25);
-            this.textBox4.TabIndex = 12;
+            this.FatherName.Location = new System.Drawing.Point(413, 261);
+            this.FatherName.Name = "FatherName";
+            this.FatherName.Size = new System.Drawing.Size(100, 25);
+            this.FatherName.TabIndex = 12;
             // 
             // button1
             // 
@@ -172,13 +173,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 567);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FatherName);
+            this.Controls.Add(this.BirthPlace);
+            this.Controls.Add(this.BirthDay);
+            this.Controls.Add(this.Generation);
+            this.Controls.Add(this.F);
+            this.Controls.Add(this.M);
+            this.Controls.Add(this.MemberName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -188,6 +189,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddM_Form";
             this.Text = "添加成员";
+            this.Load += new System.EventHandler(this.AddM_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,13 +203,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox MemberName;
+        private System.Windows.Forms.RadioButton M;
+        private System.Windows.Forms.RadioButton F;
+        private System.Windows.Forms.TextBox Generation;
+        private System.Windows.Forms.DateTimePicker BirthDay;
+        private System.Windows.Forms.TextBox BirthPlace;
+        private System.Windows.Forms.TextBox FatherName;
         private System.Windows.Forms.Button button1;
     }
 }

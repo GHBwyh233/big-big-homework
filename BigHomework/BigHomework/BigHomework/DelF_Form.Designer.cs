@@ -39,6 +39,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DelF_Form";
             this.Text = "删除族谱";
+            this.Load += new System.EventHandler(this.DelF_Form_Load);
             this.ResumeLayout(false);
 
         }

@@ -20,5 +20,9 @@ namespace BLL
         {
             return null;
         }
+        public static IQueryManager getQueryManager(string manager)
+        {
+            return null;
+        }
     }
 }

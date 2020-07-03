@@ -1,0 +1,5 @@
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\Model\bin\Debug\Model.dll
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\Model\bin\Debug\Model.pdb
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\Model\obj\Debug\Model.dll
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\Model\obj\Debug\Model.pdb

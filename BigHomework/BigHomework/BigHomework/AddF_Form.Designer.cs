@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddF_Form));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.MapName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Surname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Generation = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.Introduce = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.Precepts = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -51,12 +51,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "族谱姓名：";
             // 
-            // textBox1
+            // MapName
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(115, 25);
-            this.textBox1.TabIndex = 1;
+            this.MapName.Location = new System.Drawing.Point(101, 25);
+            this.MapName.Name = "MapName";
+            this.MapName.Size = new System.Drawing.Size(115, 25);
+            this.MapName.TabIndex = 1;
             // 
             // label2
             // 
@@ -68,12 +68,12 @@
             this.label2.Text = "族谱姓氏：";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox2
+            // Surname
             // 
-            this.textBox2.Location = new System.Drawing.Point(404, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 25);
-            this.textBox2.TabIndex = 3;
+            this.Surname.Location = new System.Drawing.Point(404, 25);
+            this.Surname.Name = "Surname";
+            this.Surname.Size = new System.Drawing.Size(119, 25);
+            this.Surname.TabIndex = 3;
             // 
             // label3
             // 
@@ -85,12 +85,12 @@
             this.label3.Text = "字辈词串：";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox3
+            // Generation
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(422, 25);
-            this.textBox3.TabIndex = 5;
+            this.Generation.Location = new System.Drawing.Point(101, 101);
+            this.Generation.Name = "Generation";
+            this.Generation.Size = new System.Drawing.Size(422, 25);
+            this.Generation.TabIndex = 5;
             // 
             // label4
             // 
@@ -101,13 +101,13 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "家训：";
             // 
-            // richTextBox1
+            // Introduce
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(101, 179);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(422, 74);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "";
+            this.Introduce.Location = new System.Drawing.Point(101, 179);
+            this.Introduce.Name = "Introduce";
+            this.Introduce.Size = new System.Drawing.Size(422, 74);
+            this.Introduce.TabIndex = 7;
+            this.Introduce.Text = "";
             // 
             // button1
             // 
@@ -128,29 +128,29 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "简介：";
             // 
-            // richTextBox2
+            // Precepts
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(101, 303);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(422, 161);
-            this.richTextBox2.TabIndex = 10;
-            this.richTextBox2.Text = "";
+            this.Precepts.Location = new System.Drawing.Point(101, 303);
+            this.Precepts.Name = "Precepts";
+            this.Precepts.Size = new System.Drawing.Size(422, 161);
+            this.Precepts.TabIndex = 10;
+            this.Precepts.Text = "";
             // 
             // AddF_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 555);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.Precepts);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.Introduce);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Generation);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Surname);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.MapName);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddF_Form";
@@ -164,15 +164,15 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox MapName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Surname;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Generation;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox Introduce;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox Precepts;
     }
 }

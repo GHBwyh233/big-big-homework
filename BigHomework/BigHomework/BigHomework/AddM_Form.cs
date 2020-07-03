@@ -23,7 +23,15 @@ namespace BigHomework
         {
             Member member = new Member();
             IMemberManager imm = ManagerFactory.getMememberManager("");
+            member.Name = MemberName.Text.Trim();
+            member.Fatherid = imm.getFatherId(FatherName.Text.Trim());
+            //member.Birth = Birth.Value.ToString();
             imm.addMember(member);
+        }
+
+        private void AddM_Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

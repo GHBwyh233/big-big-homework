@@ -38,6 +38,11 @@ namespace BigHomework
         {
             IMapManager imm = ManagerFactory.getMapManager("");
             Map map = new Map();
+            map.Name = MapName.Text.Trim();
+            map.Surname = Surname.Text.Trim();
+            map.Generation = Generation.Text.Trim();
+            map.Introduce = Introduce.Text.Trim();
+            map.Precepts = Precepts.Text.Trim();
             imm.addMap(map);
         }
     }
