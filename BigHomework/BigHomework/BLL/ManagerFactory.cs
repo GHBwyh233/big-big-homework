@@ -12,15 +12,15 @@ namespace BLL
         {
             if (manager.Equals("AccountManagerImpl"))
             {
-                return new AccountManagerImp();
+                return new AccountManagerImpl();
             }
             return null;
         }
         public static IMapManager getMapManager(string manager)
         {
-            if (manager.Equals("MapMangerImpl"))
+            if (manager.Equals("MapManagerImpl"))
             {
-                return new MapMangerImpl();
+                return new MapManagerImpl();
             }
             return null;
         }

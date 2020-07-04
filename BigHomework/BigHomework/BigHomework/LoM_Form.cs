@@ -24,12 +24,46 @@ namespace BigHomework
 
             IQueryManager iqm = ManagerFactory.getQueryManager("QUeryManagerImpl");
             int id = int.Parse(Memberid.Text);
+            string fatherName = null;
+            string mapName = null;
+            string partnerName = null;
             Member member = iqm.queryMember(id);
             MemberName.Text = member.Name;
             Sex.Text = member.Sex.ToString();
             Birth.Text = member.Birth;
             BirthPlace.Text = member.BirthPlace;
             Generation.Text = member.Generation;
+            fatherName = iqm.getFatherName(member.Fatherid);
+            mapName = iqm.getMapName(id);
+            partnerName = iqm.getPartnerName(id);
+            if (fatherName != null)
+            {
+                FatherName.Text = fatherName;
+            }
+            else 
+            {
+                FatherName.Text = "无";
+            }
+            if (mapName != null)
+            {
+                MapName.Text = mapName;
+            }
+            else
+            {
+                MapName.Text = "无";
+            }
+            if (partnerName != null) 
+            {
+                PartnerName.Text = partnerName;
+            }
+            else
+            {
+                PartnerName.Text = "无";
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -59,6 +59,12 @@
     <Compile Include="AddM_Form.Designer.cs">
       <DependentUpon>AddM_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddP_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddP_Form.Designer.cs">
+      <DependentUpon>AddP_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="DelF_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddM_Form.resx">
       <DependentUpon>AddM_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddP_Form.resx">
+      <DependentUpon>AddP_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DelF_Form.resx">
       <DependentUpon>DelF_Form.cs</DependentUpon>

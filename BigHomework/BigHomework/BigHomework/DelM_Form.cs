@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using Model;
 
 namespace BigHomework
 {
@@ -15,6 +17,12 @@ namespace BigHomework
         public DelM_Form()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
+            imm.deletePartner(MemberName.Text.Trim());
         }
     }
 }

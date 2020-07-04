@@ -43,14 +43,14 @@
   <ItemGroup>
     <Compile Include="AccountManagerImpl .cs" />
     <Compile Include="IMapManager.cs" />
-    <Compile Include="MapMangerImpl.cs" />
     <Compile Include="IMemberManager.cs" />
-    <Compile Include="MemberManagerImpl .cs" />
     <Compile Include="IQueryManager.cs" />
     <Compile Include="ManagerFactory.cs" />
     <Compile Include="IAccountManager.cs" />
+    <Compile Include="MapManagerImpl.cs" />
+    <Compile Include="MemberManagerImpl .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QUeryManagerImpl.cs" />
+    <Compile Include="QUeryManagerImpl .cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

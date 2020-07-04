@@ -51,7 +51,7 @@ namespace BigHomework
                 }
                 else if (level == 3)
                 {
-                    NormalForm normalForm = new NormalForm();
+                    NormalForm normalForm = new NormalForm(username);
                     this.Hide();
                     normalForm.Show();
                 }

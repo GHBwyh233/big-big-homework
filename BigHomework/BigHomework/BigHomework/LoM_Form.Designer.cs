@@ -42,6 +42,12 @@
             this.BirthPlace = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Generation = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.FatherName = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.PartnerName = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.MapName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -150,11 +156,66 @@
             this.Generation.Size = new System.Drawing.Size(100, 25);
             this.Generation.TabIndex = 12;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(308, 293);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 15);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "父亲姓名：";
+            // 
+            // FatherName
+            // 
+            this.FatherName.Location = new System.Drawing.Point(403, 290);
+            this.FatherName.Name = "FatherName";
+            this.FatherName.Size = new System.Drawing.Size(100, 25);
+            this.FatherName.TabIndex = 14;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(39, 368);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 15);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "配偶姓名：";
+            // 
+            // PartnerName
+            // 
+            this.PartnerName.Location = new System.Drawing.Point(136, 365);
+            this.PartnerName.Name = "PartnerName";
+            this.PartnerName.Size = new System.Drawing.Size(100, 25);
+            this.PartnerName.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(311, 368);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 15);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "族谱姓名：";
+            // 
+            // MapName
+            // 
+            this.MapName.Location = new System.Drawing.Point(403, 365);
+            this.MapName.Name = "MapName";
+            this.MapName.Size = new System.Drawing.Size(100, 25);
+            this.MapName.TabIndex = 18;
+            this.MapName.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
             // LoM_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 523);
+            this.Controls.Add(this.MapName);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.PartnerName);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.FatherName);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.Generation);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.BirthPlace);
@@ -191,5 +252,11 @@
         private System.Windows.Forms.TextBox BirthPlace;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox Generation;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox FatherName;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox PartnerName;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox MapName;
     }
 }

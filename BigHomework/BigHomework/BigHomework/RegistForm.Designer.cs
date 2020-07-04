@@ -29,7 +29,126 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistForm));
+            this.label1 = new System.Windows.Forms.Label();
+            this.Username = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Pwd = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Tele = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.RealName = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Pwd1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "用户名：";
+            // 
+            // Username
+            // 
+            this.Username.Location = new System.Drawing.Point(125, 38);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(100, 25);
+            this.Username.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 127);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "密码：";
+            // 
+            // Pwd
+            // 
+            this.Pwd.Location = new System.Drawing.Point(125, 124);
+            this.Pwd.Name = "Pwd";
+            this.Pwd.Size = new System.Drawing.Size(100, 25);
+            this.Pwd.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 204);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "电话号码：";
+            // 
+            // Tele
+            // 
+            this.Tele.Location = new System.Drawing.Point(125, 201);
+            this.Tele.Name = "Tele";
+            this.Tele.Size = new System.Drawing.Size(100, 25);
+            this.Tele.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(23, 291);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "邮箱：";
+            // 
+            // Email
+            // 
+            this.Email.Location = new System.Drawing.Point(125, 288);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(100, 25);
+            this.Email.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 363);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "真实姓名：";
+            // 
+            // RealName
+            // 
+            this.RealName.Location = new System.Drawing.Point(125, 360);
+            this.RealName.Name = "RealName";
+            this.RealName.Size = new System.Drawing.Size(100, 25);
+            this.RealName.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(139, 459);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "注册";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 169);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 15);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "确认密码：";
+            // 
+            // Pwd1
+            // 
+            this.Pwd1.Location = new System.Drawing.Point(125, 166);
+            this.Pwd1.Name = "Pwd1";
+            this.Pwd1.Size = new System.Drawing.Size(100, 25);
+            this.Pwd1.TabIndex = 12;
             // 
             // RegistForm
             // 
@@ -37,14 +156,42 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(349, 482);
+            this.ClientSize = new System.Drawing.Size(450, 570);
+            this.Controls.Add(this.Pwd1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.RealName);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Tele);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Pwd);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Username);
+            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistForm";
             this.Text = "注册账号";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Username;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox Pwd;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox Tele;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Email;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox RealName;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox Pwd1;
     }
 }

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Map.cs" />
     <Compile Include="Member.cs" />
+    <Compile Include="Partner.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -36,7 +36,7 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            IMapManager imm = ManagerFactory.getMapManager("MapMangerImpl");
+            IMapManager imm = ManagerFactory.getMapManager("MapManagerImpl");
             Map map = new Map();
             map.Name = MapName.Text.Trim();
             map.Surname = Surname.Text.Trim();

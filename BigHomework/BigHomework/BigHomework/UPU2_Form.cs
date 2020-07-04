@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
+using Model;
 
 namespace BigHomework
 {
@@ -15,6 +17,17 @@ namespace BigHomework
         public UPU2_Form()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IAccountManager iam = ManagerFactory.getAccountManager("AccountManagerImpl");
+            int perLevel = 3;
+            if (FamCtr.Checked)
+            {
+                perLevel = 2;
+            }
+            iam.modifyUserPerLevel(Username.Text, perLevel);
         }
     }
 }

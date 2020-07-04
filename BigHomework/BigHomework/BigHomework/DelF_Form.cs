@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace BigHomework
 {
@@ -20,6 +21,12 @@ namespace BigHomework
         private void DelF_Form_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IMapManager imm = ManagerFactory.getMapManager("MapManagerImpl");
+            imm.deleteMap(int.Parse(Mapid.Text));
         }
     }
 }

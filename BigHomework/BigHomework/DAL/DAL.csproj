@@ -62,8 +62,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBUtiIlmpl.cs" />
     <Compile Include="DBUtilFactory.cs" />
-    <Compile Include="DBUtiIlmplementer.cs" />
     <Compile Include="IDBUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
