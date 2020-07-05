@@ -12,7 +12,7 @@ namespace Model
         private string name;//成员姓名
         private char sex;//成员性别
         private string generation;//成员字辈
-        private string birth;//出生日期,格式：xxxx-xx-xx
+        private string birth;//出生日期,格式：xxxx/xx/xx
         private string birthPlace;//出生地
         private string idcard;//身份证号
         private int fatherid;//父亲id

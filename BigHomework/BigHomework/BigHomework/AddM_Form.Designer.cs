@@ -39,12 +39,16 @@
             this.Male = new System.Windows.Forms.RadioButton();
             this.Female = new System.Windows.Forms.RadioButton();
             this.Generation = new System.Windows.Forms.TextBox();
-            this.Birth = new System.Windows.Forms.DateTimePicker();
             this.BirthPlace = new System.Windows.Forms.TextBox();
             this.FatherName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.Idcard = new System.Windows.Forms.TextBox();
+            this.Year = new System.Windows.Forms.CheckedListBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Month = new System.Windows.Forms.CheckedListBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Day = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(311, 20);
+            this.label2.Location = new System.Drawing.Point(256, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 1;
@@ -77,7 +81,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(311, 101);
+            this.label4.Location = new System.Drawing.Point(256, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 3;
@@ -95,7 +99,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(311, 183);
+            this.label6.Location = new System.Drawing.Point(256, 183);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 15);
             this.label6.TabIndex = 5;
@@ -111,7 +115,7 @@
             // Male
             // 
             this.Male.AutoSize = true;
-            this.Male.Location = new System.Drawing.Point(389, 21);
+            this.Male.Location = new System.Drawing.Point(329, 23);
             this.Male.Name = "Male";
             this.Male.Size = new System.Drawing.Size(43, 19);
             this.Male.TabIndex = 7;
@@ -122,7 +126,7 @@
             // Female
             // 
             this.Female.AutoSize = true;
-            this.Female.Location = new System.Drawing.Point(517, 21);
+            this.Female.Location = new System.Drawing.Point(423, 26);
             this.Female.Name = "Female";
             this.Female.Size = new System.Drawing.Size(43, 19);
             this.Female.TabIndex = 8;
@@ -132,18 +136,10 @@
             // 
             // Generation
             // 
-            this.Generation.Location = new System.Drawing.Point(120, 98);
+            this.Generation.Location = new System.Drawing.Point(120, 97);
             this.Generation.Name = "Generation";
             this.Generation.Size = new System.Drawing.Size(100, 25);
             this.Generation.TabIndex = 9;
-            // 
-            // Birth
-            // 
-            this.Birth.CustomFormat = "xxxx-xx-xx";
-            this.Birth.Location = new System.Drawing.Point(399, 98);
-            this.Birth.Name = "Birth";
-            this.Birth.Size = new System.Drawing.Size(200, 25);
-            this.Birth.TabIndex = 10;
             // 
             // BirthPlace
             // 
@@ -154,7 +150,7 @@
             // 
             // FatherName
             // 
-            this.FatherName.Location = new System.Drawing.Point(412, 180);
+            this.FatherName.Location = new System.Drawing.Point(344, 180);
             this.FatherName.Name = "FatherName";
             this.FatherName.Size = new System.Drawing.Size(100, 25);
             this.FatherName.TabIndex = 12;
@@ -185,17 +181,117 @@
             this.Idcard.Size = new System.Drawing.Size(100, 25);
             this.Idcard.TabIndex = 15;
             // 
+            // Year
+            // 
+            this.Year.CheckOnClick = true;
+            this.Year.FormattingEnabled = true;
+            this.Year.Items.AddRange(new object[] {
+            "1997",
+            "1998",
+            "1999",
+            "2000",
+            "2001"});
+            this.Year.Location = new System.Drawing.Point(344, 98);
+            this.Year.Name = "Year";
+            this.Year.Size = new System.Drawing.Size(90, 24);
+            this.Year.TabIndex = 16;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(440, 101);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(22, 15);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "年";
+            // 
+            // Month
+            // 
+            this.Month.CheckOnClick = true;
+            this.Month.FormattingEnabled = true;
+            this.Month.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.Month.Location = new System.Drawing.Point(468, 98);
+            this.Month.Name = "Month";
+            this.Month.Size = new System.Drawing.Size(91, 24);
+            this.Month.TabIndex = 18;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(565, 101);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(22, 15);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "月";
+            // 
+            // Day
+            // 
+            this.Day.CheckOnClick = true;
+            this.Day.FormattingEnabled = true;
+            this.Day.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.Day.Location = new System.Drawing.Point(593, 98);
+            this.Day.Name = "Day";
+            this.Day.Size = new System.Drawing.Size(114, 24);
+            this.Day.TabIndex = 20;
+            // 
             // AddM_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 567);
+            this.ClientSize = new System.Drawing.Size(778, 582);
+            this.Controls.Add(this.Day);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.Month);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.Year);
             this.Controls.Add(this.Idcard);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.FatherName);
             this.Controls.Add(this.BirthPlace);
-            this.Controls.Add(this.Birth);
             this.Controls.Add(this.Generation);
             this.Controls.Add(this.Female);
             this.Controls.Add(this.Male);
@@ -227,11 +323,15 @@
         private System.Windows.Forms.RadioButton Male;
         private System.Windows.Forms.RadioButton Female;
         private System.Windows.Forms.TextBox Generation;
-        private System.Windows.Forms.DateTimePicker Birth;
         private System.Windows.Forms.TextBox BirthPlace;
         private System.Windows.Forms.TextBox FatherName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Idcard;
+        private System.Windows.Forms.CheckedListBox Year;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckedListBox Month;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.CheckedListBox Day;
     }
 }

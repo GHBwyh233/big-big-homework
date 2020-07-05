@@ -31,12 +31,37 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            QueryBranch_Form lf = new QueryBranch_Form();
+            lf.ShowDialog();
         }
 
         private void LocatingForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            QueryRela_Form lf = new QueryRela_Form();
+            lf.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            QueryChild_Form lf = new QueryChild_Form();
+            lf.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            QueryAllM_Form lf = new QueryAllM_Form();
+            lf.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            QueryA_Form lf = new QueryA_Form();
+            lf.ShowDialog();
         }
     }
 }

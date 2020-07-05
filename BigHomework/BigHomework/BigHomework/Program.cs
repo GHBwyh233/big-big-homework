@@ -22,7 +22,7 @@ namespace BigHomework
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
             if (status == 1){
-                Application.Run(new RootForm());
+                Application.Run(new LoginForm());
             }else if(status == 2)
             {
                 Application.Run(new FamCtrForm());

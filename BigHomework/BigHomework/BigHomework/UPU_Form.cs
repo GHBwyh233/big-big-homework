@@ -29,6 +29,7 @@ namespace BigHomework
             user.Tele = Tele.Text;
             user.Email = Email.Text;
             iam.modifyUser(username, user);
+            MessageBox.Show("修改成功！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -36,3 +36,8 @@ F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomewor
 F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\DAL.pdb
 F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\bin\Debug\MySql.Data.xml
 F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\obj\Debug\BigHomework.AddP_Form.resources
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\obj\Debug\BigHomework.QueryRela_Form.resources
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\obj\Debug\BigHomework.QueryAllM_Form.resources
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\obj\Debug\BigHomework.QueryA_Form.resources
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\obj\Debug\BigHomework.QueryBranch_Form.resources
+F:\Git版本管理工具\Git克隆代码\big-big-homework\BigHomework\BigHomework\BigHomework\obj\Debug\BigHomework.QueryChild_Form.resources

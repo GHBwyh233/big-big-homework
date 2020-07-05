@@ -21,8 +21,22 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (!Pwd.Text.Equals(Pwd1.Text))
+            {
+                MessageBox.Show("确认密码跟密码不一样！");
+            }
             IAccountManager iam = ManagerFactory.getAccountManager("AccountManagerImpl");
-            iam.getMapid("s");
+            IQueryManager iqm = ManagerFactory.getQueryManager("QUeryManagerImpl");
+            User user = new User();
+            Member member = iqm.queryMember(RealName.Text.Trim());
+            user.Memberid = member.Id;
+            user.Mapid = member.Mapid;
+            user.Username = Username.Text;
+            user.Pwd = Pwd.Text;
+            user.Tele = Tele.Text;
+            user.Email = Email.Text;
+            user.PerLevel = 3;
+            iam.addUser(user);
         }
     }
 }

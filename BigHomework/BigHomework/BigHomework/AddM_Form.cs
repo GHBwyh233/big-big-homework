@@ -27,11 +27,12 @@ namespace BigHomework
             StringBuilder sb = new StringBuilder();
             member.Name = MemberName.Text.Trim();
             member.Fatherid = imm.getFatherId(FatherName.Text.Trim());
-            sb.Append(Birth.Value.Year.ToString());
-            sb.Append("-");
-            sb.Append(Birth.Value.Month.ToString());
-            sb.Append("-");
-            sb.Append(Birth.Value.Day.ToString());
+            sb.Append(Year.GetItemText(Year.Items[0]));
+            sb.Append("/");
+            sb.Append(Month.GetItemText(Month.Items[0]));
+            sb.Append("/");
+            sb.Append(Day.GetItemText(Day.Items[0]));
+            //MessageBox.Show(sb.ToString());
             member.Birth = sb.ToString();
             member.BirthPlace = BirthPlace.Text;
             member.Generation = Generation.Text.Trim();

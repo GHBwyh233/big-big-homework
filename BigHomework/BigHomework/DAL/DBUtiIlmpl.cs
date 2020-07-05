@@ -532,7 +532,7 @@ namespace DAL
 
             List<Member> MemberList = new List<Member>();
 
-            Member member = new Member();
+            
 
             String sqlCconnStr = "Server =47.101.213.60;Database=big-homework;UID=xiehang;Password=Cflolwdza123.";
             //连接数据库 
@@ -570,6 +570,7 @@ namespace DAL
             //逐行遍历，取出各行的数据
             for (int inti = 0; inti < coldrow.Count; inti++)
             {
+                Member member = new Member();
                 drow = coldrow[inti];
                 member.Id = Convert.ToInt32(drow[0]);//给id赋值
                 member.Name = Convert.ToString(drow[1]);//给name赋值
@@ -593,7 +594,7 @@ namespace DAL
 
             List<Partner> PartnerList = new List<Partner>();
 
-            Partner member = new Partner();
+            
 
             String sqlCconnStr = "Server =47.101.213.60;Database=big-homework;UID=xiehang;Password=Cflolwdza123.";
             //连接数据库 
@@ -631,6 +632,7 @@ namespace DAL
             //逐行遍历，取出各行的数据
             for (int inti = 0; inti < coldrow.Count; inti++)
             {
+                Partner member = new Partner();
                 drow = coldrow[inti];
                 member.Id = Convert.ToInt32(drow[0]);//给id赋值
                 member.Name = Convert.ToString(drow[1]);//给name赋值
@@ -659,7 +661,7 @@ namespace DAL
             //打开连接
             sqlCon.Open();
             //建立DataAdapter对象  
-            string sltStr = "select * from t_familymap ";//查询出所有的字段
+            string sltStr = "select * from t_map ";//查询出所有的字段
             MySqlCommand sqlCmd = new MySqlCommand(sltStr, sqlCon);
             MySqlDataAdapter msda = new MySqlDataAdapter(sqlCmd);
             //建立 CommandBuilder 对象来自动生成 DataAdapter 的 Command 命令，否则就要自己编写
@@ -1106,6 +1108,119 @@ namespace DAL
             msda.Update(ds, "tabuser");//更新数据库
             sqlCon.Close();
             sqlCon = null;
+        }
+
+        public List<Member> getChildList(int id)
+        {
+            List<Member> MemberList = new List<Member>();
+
+            
+
+            String sqlCconnStr = "Server =47.101.213.60;Database=big-homework;UID=xiehang;Password=Cflolwdza123.";
+            //连接数据库 
+            MySqlConnection sqlCon = new MySqlConnection(sqlCconnStr);
+
+            //建立DataSet对象(相当于建立前台的虚拟数据库)
+            DataSet ds = new DataSet();
+
+            //建立DataTable对象(相当于建立前台的虚拟数据库中的数据表)
+            DataTable dtable;
+
+            //建立DataRowCollection对象(相当于表的行的集合)
+            DataRowCollection coldrow;
+
+            //建立DataRow对象(相当于表的列的集合)
+            DataRow drow;
+
+            //打开连接
+            sqlCon.Open();
+
+            //建立DataAdapter对象  
+            string sltStr = "select * from t_member where father_id = '" + id+"'";//编写符合你查询条件的sql语句
+            MySqlCommand sqlCmd = new MySqlCommand(sltStr, sqlCon);
+            MySqlDataAdapter msda = new MySqlDataAdapter(sqlCmd);
+
+            //将查询的结果存到虚拟数据库ds中的虚拟表tabuser中
+            msda.Fill(ds, "tabuser");
+
+            //将数据表tabuser的数据复制到DataTable对象（取数据）
+            dtable = ds.Tables["tabuser"];
+
+            //用DataRowCollection对象获取这个数据表的所有数据行
+            coldrow = dtable.Rows;
+
+            //逐行遍历，取出各行的数据
+            for (int inti = 0; inti < coldrow.Count; inti++)
+            {
+                Member member = new Member();
+                drow = coldrow[inti];
+                member.Id = Convert.ToInt32(drow[0]);//给id赋值
+                member.Name = Convert.ToString(drow[1]);//给name赋值
+                member.Sex = Convert.ToChar(drow[2]);//给赋值
+                member.Generation = Convert.ToString(drow[3]);
+                member.Birth = Convert.ToString(drow[4]);
+                member.BirthPlace = Convert.ToString(drow[5]);
+                member.Idcard = Convert.ToString(drow[6]);
+                member.Fatherid = Convert.ToInt32(drow[7]);
+                member.Mapid = Convert.ToInt32(drow[8]);
+                MemberList.Add(member);
+            }
+
+            return MemberList;
+        }
+
+        public Member getAncestor(int mapid)
+        {
+            Member member = new Member();
+
+            String sqlCconnStr = "Server =47.101.213.60;Database=big-homework;UID=xiehang;Password=Cflolwdza123.";
+            //连接数据库 
+            MySqlConnection sqlCon = new MySqlConnection(sqlCconnStr);
+
+            //建立DataSet对象(相当于建立前台的虚拟数据库)
+            DataSet ds = new DataSet();
+
+            //建立DataTable对象(相当于建立前台的虚拟数据库中的数据表)
+            DataTable dtable;
+
+            //建立DataRowCollection对象(相当于表的行的集合)
+            DataRowCollection coldrow;
+
+            //建立DataRow对象(相当于表的列的集合)
+            DataRow drow;
+
+            //打开连接
+            sqlCon.Open();
+
+            //建立DataAdapter对象  
+            string sltStr = "select * from t_member where map_id = '" + mapid + "' and father_id='"+ -1 +"'";//编写符合你查询条件的sql语句
+            MySqlCommand sqlCmd = new MySqlCommand(sltStr, sqlCon);
+            MySqlDataAdapter msda = new MySqlDataAdapter(sqlCmd);
+
+            //将查询的结果存到虚拟数据库ds中的虚拟表tabuser中
+            msda.Fill(ds, "tabuser");
+
+            //将数据表tabuser的数据复制到DataTable对象（取数据）
+            dtable = ds.Tables["tabuser"];
+
+            //用DataRowCollection对象获取这个数据表的所有数据行
+            coldrow = dtable.Rows;
+
+            //逐行遍历，取出各行的数据
+            for (int inti = 0; inti < coldrow.Count; inti++)
+            {
+                drow = coldrow[inti];
+                member.Id = Convert.ToInt32(drow[0]);//给id赋值
+                member.Name = Convert.ToString(drow[1]);//给name赋值
+                member.Sex = Convert.ToChar(drow[2]);//给赋值
+                member.Generation = Convert.ToString(drow[3]);
+                member.Birth = Convert.ToString(drow[4]);
+                member.BirthPlace = Convert.ToString(drow[5]);
+                member.Idcard = Convert.ToString(drow[6]);
+                member.Fatherid = Convert.ToInt32(drow[7]);
+                member.Mapid = Convert.ToInt32(drow[8]);
+            }
+            return member;
         }
     }
 }

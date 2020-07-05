@@ -68,5 +68,7 @@ namespace DAL
         * 5            generation
         */
         void modifyMap(int id, int num, Map map);
+        List<Member> getChildList(int id);//返回该id对应的成员的所有孩子
+        Member getAncestor(int mapid);//返回该族谱id对应的祖先(成员)
     }
 }

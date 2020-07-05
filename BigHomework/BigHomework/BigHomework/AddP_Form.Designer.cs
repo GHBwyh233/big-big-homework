@@ -31,8 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PartnerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Sex = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.Male = new System.Windows.Forms.RadioButton();
+            this.Female = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -60,13 +61,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "配偶性别：";
             // 
-            // Sex
-            // 
-            this.Sex.Location = new System.Drawing.Point(483, 32);
-            this.Sex.Name = "Sex";
-            this.Sex.Size = new System.Drawing.Size(100, 25);
-            this.Sex.TabIndex = 3;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(271, 255);
@@ -77,13 +71,36 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Male
+            // 
+            this.Male.AutoSize = true;
+            this.Male.Location = new System.Drawing.Point(452, 32);
+            this.Male.Name = "Male";
+            this.Male.Size = new System.Drawing.Size(43, 19);
+            this.Male.TabIndex = 5;
+            this.Male.TabStop = true;
+            this.Male.Text = "男";
+            this.Male.UseVisualStyleBackColor = true;
+            // 
+            // Female
+            // 
+            this.Female.AutoSize = true;
+            this.Female.Location = new System.Drawing.Point(550, 35);
+            this.Female.Name = "Female";
+            this.Female.Size = new System.Drawing.Size(43, 19);
+            this.Female.TabIndex = 6;
+            this.Female.TabStop = true;
+            this.Female.Text = "女";
+            this.Female.UseVisualStyleBackColor = true;
+            // 
             // AddP_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Female);
+            this.Controls.Add(this.Male);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.Sex);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.PartnerName);
             this.Controls.Add(this.label1);
@@ -100,7 +117,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox PartnerName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Sex;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton Male;
+        private System.Windows.Forms.RadioButton Female;
     }
 }

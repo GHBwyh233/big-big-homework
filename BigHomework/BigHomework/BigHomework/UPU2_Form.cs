@@ -28,6 +28,7 @@ namespace BigHomework
                 perLevel = 2;
             }
             iam.modifyUserPerLevel(Username.Text, perLevel);
+            MessageBox.Show("修改成功！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -31,8 +31,19 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            IMemberManager imm = ManagerFactory.getMememberManager("");
+            IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
+            IQueryManager iqm = ManagerFactory.getQueryManager("QUeryManagerImpl");
             Partner partner = new Partner();
+            partner.Name = PartnerName.Text;
+            if (Male.Checked)
+            {
+                partner.Sex = '男';
+            }
+            else
+            {
+                partner.Sex = '女';
+            }
+            partner.Partnerid = iqm.queryUser(username).Memberid;
             imm.addPartner(partner);
         }
     }

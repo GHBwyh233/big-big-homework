@@ -127,6 +127,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryAllM_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryAllM_Form.Designer.cs">
+      <DependentUpon>QueryAllM_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryA_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryA_Form.Designer.cs">
+      <DependentUpon>QueryA_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryBranch_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryBranch_Form.Designer.cs">
+      <DependentUpon>QueryBranch_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryChild_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryChild_Form.Designer.cs">
+      <DependentUpon>QueryChild_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryRela_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryRela_Form.Designer.cs">
+      <DependentUpon>QueryRela_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +242,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QueryAllM_Form.resx">
+      <DependentUpon>QueryAllM_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryA_Form.resx">
+      <DependentUpon>QueryA_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryBranch_Form.resx">
+      <DependentUpon>QueryBranch_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryChild_Form.resx">
+      <DependentUpon>QueryChild_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryRela_Form.resx">
+      <DependentUpon>QueryRela_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistForm.resx">
       <DependentUpon>RegistForm.cs</DependentUpon>
     </EmbeddedResource>
