@@ -22,36 +22,49 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Member member = new Member();
-            IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
-            StringBuilder sb = new StringBuilder();
-            member.Name = MemberName.Text.Trim();
-            member.Fatherid = imm.getFatherId(FatherName.Text.Trim());
-            sb.Append(Year.GetItemText(Year.Items[0]));
-            sb.Append("/");
-            sb.Append(Month.GetItemText(Month.Items[0]));
-            sb.Append("/");
-            sb.Append(Day.GetItemText(Day.Items[0]));
-            //MessageBox.Show(sb.ToString());
-            member.Birth = sb.ToString();
-            member.BirthPlace = BirthPlace.Text;
-            member.Generation = Generation.Text.Trim();
-            member.Idcard = Idcard.Text;
-            if (Male.Checked)
+            try
             {
-                member.Sex = '男';
-            }
-            else
+                Member member = new Member();
+                IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
+                StringBuilder sb = new StringBuilder();
+                member.Name = MemberName.Text.Trim();
+                member.Fatherid = imm.getFatherId(FatherName.Text.Trim());
+                sb.Append(Year.GetItemText(Year.Items[0]));
+                sb.Append("/");
+                sb.Append(Month.GetItemText(Month.Items[0]));
+                sb.Append("/");
+                sb.Append(Day.GetItemText(Day.Items[0]));
+                //MessageBox.Show(sb.ToString());
+                member.Birth = sb.ToString();
+                member.BirthPlace = BirthPlace.Text;
+                member.Generation = Generation.Text.Trim();
+                member.Idcard = Idcard.Text;
+                if (Male.Checked)
+                {
+                    member.Sex = '男';
+                }
+                else
+                {
+                    member.Sex = '女';
+                }
+                member.Mapid = imm.getMapid(id);
+                imm.addMember(member);
+            }catch(Exception ex)
             {
-                member.Sex = '女';
+                MessageBox.Show(ex.Message);
+                this.Close();
             }
-            member.Mapid = imm.getMapid(id);
-            imm.addMember(member);
+            MessageBox.Show("添加成功！");
         }
 
         private void AddM_Form_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

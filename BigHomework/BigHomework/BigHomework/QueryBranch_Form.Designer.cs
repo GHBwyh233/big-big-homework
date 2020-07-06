@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QueryBranch_Form));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Memberid = new System.Windows.Forms.TextBox();
@@ -43,27 +44,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 36);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(74, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 15);
+            this.label1.Size = new System.Drawing.Size(124, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "输入成员id：";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(486, 32);
+            this.button1.BackColor = System.Drawing.Color.Cornsilk;
+            this.button1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(505, 69);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(97, 36);
             this.button1.TabIndex = 1;
             this.button1.Text = "查询";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Memberid
             // 
-            this.Memberid.Location = new System.Drawing.Point(198, 33);
+            this.Memberid.Location = new System.Drawing.Point(204, 77);
             this.Memberid.Name = "Memberid";
-            this.Memberid.Size = new System.Drawing.Size(100, 25);
+            this.Memberid.Size = new System.Drawing.Size(190, 25);
             this.Memberid.TabIndex = 2;
             // 
             // dgv
@@ -76,11 +81,11 @@
             this.Column4,
             this.Column3,
             this.Sname});
-            this.dgv.Location = new System.Drawing.Point(1, 229);
+            this.dgv.Location = new System.Drawing.Point(1, 157);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersWidth = 51;
             this.dgv.RowTemplate.Height = 27;
-            this.dgv.Size = new System.Drawing.Size(801, 220);
+            this.dgv.Size = new System.Drawing.Size(801, 294);
             this.dgv.TabIndex = 3;
             // 
             // Column1
@@ -122,13 +127,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.Memberid);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "QueryBranch_Form";
-            this.Text = "QueryBranch_Form";
+            this.Text = "查询分支";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

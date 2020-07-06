@@ -38,5 +38,10 @@ namespace BigHomework
             user.PerLevel = 3;
             iam.addUser(user);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

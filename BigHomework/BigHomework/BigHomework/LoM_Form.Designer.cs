@@ -53,9 +53,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(39, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 15);
+            this.label1.Size = new System.Drawing.Size(143, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "请输入成员id：";
             // 
@@ -68,20 +70,24 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Cornsilk;
+            this.button1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(403, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "查询";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(39, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.Size = new System.Drawing.Size(66, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "姓名：";
             // 
@@ -89,15 +95,17 @@
             // 
             this.MemberName.Location = new System.Drawing.Point(136, 128);
             this.MemberName.Name = "MemberName";
-            this.MemberName.Size = new System.Drawing.Size(100, 25);
+            this.MemberName.Size = new System.Drawing.Size(125, 25);
             this.MemberName.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(311, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(66, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "性别：";
             // 
@@ -105,15 +113,17 @@
             // 
             this.Sex.Location = new System.Drawing.Point(403, 128);
             this.Sex.Name = "Sex";
-            this.Sex.Size = new System.Drawing.Size(100, 25);
+            this.Sex.Size = new System.Drawing.Size(128, 25);
             this.Sex.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(39, 206);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 15);
+            this.label4.Size = new System.Drawing.Size(104, 19);
             this.label4.TabIndex = 7;
             this.label4.Text = "出生日期：";
             // 
@@ -121,15 +131,17 @@
             // 
             this.Birth.Location = new System.Drawing.Point(136, 203);
             this.Birth.Name = "Birth";
-            this.Birth.Size = new System.Drawing.Size(100, 25);
+            this.Birth.Size = new System.Drawing.Size(125, 25);
             this.Birth.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(311, 206);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 15);
+            this.label5.Size = new System.Drawing.Size(85, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "出生地：";
             // 
@@ -137,15 +149,17 @@
             // 
             this.BirthPlace.Location = new System.Drawing.Point(403, 203);
             this.BirthPlace.Name = "BirthPlace";
-            this.BirthPlace.Size = new System.Drawing.Size(100, 25);
+            this.BirthPlace.Size = new System.Drawing.Size(128, 25);
             this.BirthPlace.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(39, 286);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 15);
+            this.label6.Size = new System.Drawing.Size(66, 19);
             this.label6.TabIndex = 11;
             this.label6.Text = "字辈：";
             // 
@@ -153,15 +167,17 @@
             // 
             this.Generation.Location = new System.Drawing.Point(136, 283);
             this.Generation.Name = "Generation";
-            this.Generation.Size = new System.Drawing.Size(100, 25);
+            this.Generation.Size = new System.Drawing.Size(125, 25);
             this.Generation.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.Location = new System.Drawing.Point(308, 293);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 15);
+            this.label7.Size = new System.Drawing.Size(104, 19);
             this.label7.TabIndex = 13;
             this.label7.Text = "父亲姓名：";
             // 
@@ -169,15 +185,17 @@
             // 
             this.FatherName.Location = new System.Drawing.Point(403, 290);
             this.FatherName.Name = "FatherName";
-            this.FatherName.Size = new System.Drawing.Size(100, 25);
+            this.FatherName.Size = new System.Drawing.Size(128, 25);
             this.FatherName.TabIndex = 14;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.Location = new System.Drawing.Point(39, 368);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 15);
+            this.label8.Size = new System.Drawing.Size(104, 19);
             this.label8.TabIndex = 15;
             this.label8.Text = "配偶姓名：";
             // 
@@ -185,15 +203,17 @@
             // 
             this.PartnerName.Location = new System.Drawing.Point(136, 365);
             this.PartnerName.Name = "PartnerName";
-            this.PartnerName.Size = new System.Drawing.Size(100, 25);
+            this.PartnerName.Size = new System.Drawing.Size(125, 25);
             this.PartnerName.TabIndex = 16;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.Location = new System.Drawing.Point(311, 368);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 15);
+            this.label9.Size = new System.Drawing.Size(104, 19);
             this.label9.TabIndex = 17;
             this.label9.Text = "族谱姓名：";
             // 
@@ -201,7 +221,7 @@
             // 
             this.MapName.Location = new System.Drawing.Point(403, 365);
             this.MapName.Name = "MapName";
-            this.MapName.Size = new System.Drawing.Size(100, 25);
+            this.MapName.Size = new System.Drawing.Size(128, 25);
             this.MapName.TabIndex = 18;
             this.MapName.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -209,7 +229,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 523);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(574, 504);
             this.Controls.Add(this.MapName);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.PartnerName);

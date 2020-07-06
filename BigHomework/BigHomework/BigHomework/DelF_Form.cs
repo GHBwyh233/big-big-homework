@@ -25,8 +25,22 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            IMapManager imm = ManagerFactory.getMapManager("MapManagerImpl");
-            imm.deleteMap(int.Parse(Mapid.Text));
+            try
+            {
+                IMapManager imm = ManagerFactory.getMapManager("MapManagerImpl");
+                imm.deleteMap(int.Parse(Mapid.Text));
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                this.Close();
+            }
+            MessageBox.Show("删除成功！");
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

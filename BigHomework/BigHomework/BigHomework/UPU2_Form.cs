@@ -30,5 +30,10 @@ namespace BigHomework
             iam.modifyUserPerLevel(Username.Text, perLevel);
             MessageBox.Show("修改成功！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

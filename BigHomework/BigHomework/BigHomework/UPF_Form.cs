@@ -46,5 +46,10 @@ namespace BigHomework
             map.Introduce = Introduce.Text.Trim();
             imm.modifyMap(1, map);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

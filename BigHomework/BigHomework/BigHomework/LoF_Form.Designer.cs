@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoF_Form));
             this.label1 = new System.Windows.Forms.Label();
             this.Mapid = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,41 +47,47 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 24);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(40, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 15);
+            this.label1.Size = new System.Drawing.Size(143, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "请输入族谱id：";
             // 
             // Mapid
             // 
-            this.Mapid.Location = new System.Drawing.Point(164, 21);
+            this.Mapid.Location = new System.Drawing.Point(189, 45);
             this.Mapid.Name = "Mapid";
             this.Mapid.Size = new System.Drawing.Size(194, 25);
             this.Mapid.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(425, 24);
+            this.button1.BackColor = System.Drawing.Color.Cornsilk;
+            this.button1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(453, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(103, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "查询";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 98);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(40, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
+            this.label2.Size = new System.Drawing.Size(104, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "族谱姓名：";
             // 
             // MapName
             // 
-            this.MapName.Location = new System.Drawing.Point(109, 95);
+            this.MapName.Location = new System.Drawing.Point(149, 117);
             this.MapName.Name = "MapName";
             this.MapName.Size = new System.Drawing.Size(102, 25);
             this.MapName.TabIndex = 4;
@@ -88,15 +95,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(303, 98);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(343, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 15);
+            this.label3.Size = new System.Drawing.Size(104, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "族谱姓氏：";
             // 
             // Surname
             // 
-            this.Surname.Location = new System.Drawing.Point(413, 95);
+            this.Surname.Location = new System.Drawing.Point(453, 117);
             this.Surname.Name = "Surname";
             this.Surname.Size = new System.Drawing.Size(115, 25);
             this.Surname.TabIndex = 6;
@@ -104,15 +113,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 169);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(40, 191);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 15);
+            this.label4.Size = new System.Drawing.Size(104, 19);
             this.label4.TabIndex = 7;
             this.label4.Text = "字辈词串：";
             // 
             // Generation
             // 
-            this.Generation.Location = new System.Drawing.Point(109, 166);
+            this.Generation.Location = new System.Drawing.Point(149, 188);
             this.Generation.Name = "Generation";
             this.Generation.Size = new System.Drawing.Size(419, 25);
             this.Generation.TabIndex = 8;
@@ -120,15 +131,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 237);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(40, 259);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 15);
+            this.label5.Size = new System.Drawing.Size(104, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "族谱简介：";
             // 
             // Introduce
             // 
-            this.Introduce.Location = new System.Drawing.Point(109, 237);
+            this.Introduce.Location = new System.Drawing.Point(149, 259);
             this.Introduce.Name = "Introduce";
             this.Introduce.Size = new System.Drawing.Size(419, 110);
             this.Introduce.TabIndex = 10;
@@ -137,15 +150,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 410);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(40, 432);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 15);
+            this.label6.Size = new System.Drawing.Size(66, 19);
             this.label6.TabIndex = 11;
             this.label6.Text = "家训：";
             // 
             // Precepts
             // 
-            this.Precepts.Location = new System.Drawing.Point(109, 410);
+            this.Precepts.Location = new System.Drawing.Point(149, 432);
             this.Precepts.Name = "Precepts";
             this.Precepts.Size = new System.Drawing.Size(419, 146);
             this.Precepts.TabIndex = 12;
@@ -155,7 +170,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 650);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(630, 659);
             this.Controls.Add(this.Precepts);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Introduce);

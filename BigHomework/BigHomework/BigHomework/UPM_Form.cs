@@ -26,25 +26,34 @@ namespace BigHomework
 
         private void button2_Click(object sender, EventArgs e)
         {
-            IQueryManager iqm = ManagerFactory.getQueryManager("QUeryManagerImpl");
-            IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
-            int memberid = int.Parse(Memberid.Text);
-            Member member = iqm.queryMember(memberid);
-            //修改
-            member.Name = MemberName.Text;
-            member.Generation = Generation.Text;
-            member.Birth = Birth.Text;
-            member.BirthPlace = BirthPlace.Text;
-            member.Idcard = Idcard.Text;
-            if (Male.Checked)
+            try
             {
-                member.Sex = '男';
-            }
-            else
+                IQueryManager iqm = ManagerFactory.getQueryManager("QUeryManagerImpl");
+                IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
+                int memberid = int.Parse(Memberid.Text);
+                Member member = iqm.queryMember(memberid);
+                //修改
+                member.Name = MemberName.Text;
+                member.Generation = Generation.Text;
+                member.Birth = Birth.Text;
+                member.BirthPlace = BirthPlace.Text;
+                member.Idcard = Idcard.Text;
+                if (Male.Checked)
+                {
+                    member.Sex = '男';
+                }
+                else
+                {
+                    member.Sex = '女';
+                }
+                imm.modifyMember(1, member);
+            }catch(Exception ex)
             {
-                member.Sex = '女';
+                MessageBox.Show(ex.Message);
+                this.Close();
             }
-            imm.modifyMember(1,member);
+            MessageBox.Show("修改成功！");
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,6 +77,11 @@ namespace BigHomework
                 Male.Checked = false;
             }
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

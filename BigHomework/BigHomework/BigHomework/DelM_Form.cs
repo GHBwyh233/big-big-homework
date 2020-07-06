@@ -24,5 +24,10 @@ namespace BigHomework
             IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
             imm.deletePartner(MemberName.Text.Trim());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
