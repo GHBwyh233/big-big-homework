@@ -25,12 +25,20 @@ namespace BigHomework
             IQueryManager iqm = ManagerFactory.getQueryManager("QUeryManagerImpl");
             string name = MemberName.Text.Trim();
             Member member = iqm.queryMember(name);
+            Member m = iqm.getAncestor(member.Mapid);
             if (member == null)
             {
                 MessageBox.Show("该成员不存在！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            imm.deletePartner(MemberName.Text.Trim());
+            if (member.Id == m.Id)
+            {
+                MessageBox.Show("该成员为该族谱祖先，不能删除！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            imm.deleteMember(MemberName.Text.Trim());
+            MessageBox.Show("删除成功！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

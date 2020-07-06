@@ -26,8 +26,6 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
                 IMapManager imm = ManagerFactory.getMapManager("MapManagerImpl");
                 IQueryManager iqm = ManagerFactory.getQueryManager("QUeryManagerImpl");
                 int mapid = int.Parse(Mapid.Text);
@@ -38,11 +36,6 @@ namespace BigHomework
                     return;
                 }
                 imm.deleteMap(mapid);
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                this.Close();
-            }
             MessageBox.Show("删除成功！");
             
         }

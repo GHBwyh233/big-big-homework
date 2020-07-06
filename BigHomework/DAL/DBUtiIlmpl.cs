@@ -49,6 +49,10 @@ namespace DAL
 
             //用DataRowCollection对象获取这个数据表的所有数据行
             coldrow = dtable.Rows;
+            if (coldrow.Count == 0)
+            {
+                return null;
+            }
 
             //逐行遍历，取出各行的数据
             for (int inti = 0; inti < coldrow.Count; inti++)
@@ -62,6 +66,7 @@ namespace DAL
                 user.PerLevel= Convert.ToInt32(drow[5]);
                 user.Mapid= Convert.ToInt32(drow[6]);
                 user.Memberid= Convert.ToInt32(drow[7]);
+                
             }
             sqlCon.Close();
             sqlCon = null;
@@ -103,7 +108,10 @@ namespace DAL
 
             //用DataRowCollection对象获取这个数据表的所有数据行
             coldrow = dtable.Rows;
-
+            if (coldrow.Count == 0)
+            {
+                return null;
+            }
             //逐行遍历，取出各行的数据
             for (int inti = 0; inti < coldrow.Count; inti++)
             {
@@ -241,7 +249,10 @@ namespace DAL
 
             //用DataRowCollection对象获取这个数据表的所有数据行
             coldrow = dtable.Rows;
-
+            if (coldrow.Count == 0)
+            {
+                return null;
+            }
             //逐行遍历，取出各行的数据
             for (int inti = 0; inti < coldrow.Count; inti++)
             {
@@ -295,7 +306,10 @@ namespace DAL
 
             //用DataRowCollection对象获取这个数据表的所有数据行
             coldrow = dtable.Rows;
-
+            if (coldrow.Count == 0)
+            {
+                return null;
+            }
             //逐行遍历，取出各行的数据
             for (int inti = 0; inti < coldrow.Count; inti++)
             {
@@ -660,7 +674,7 @@ namespace DAL
             //打开连接
             sqlCon.Open();
             //建立DataAdapter对象  
-            string sltStr = "select * from t_map ";//查询出所有的字段
+            string sltStr = "select * from t_familymap ";//查询出所有的字段
             MySqlCommand sqlCmd = new MySqlCommand(sltStr, sqlCon);
             MySqlDataAdapter msda = new MySqlDataAdapter(sqlCmd);
             //建立 CommandBuilder 对象来自动生成 DataAdapter 的 Command 命令，否则就要自己编写
@@ -1204,7 +1218,10 @@ namespace DAL
 
             //用DataRowCollection对象获取这个数据表的所有数据行
             coldrow = dtable.Rows;
-
+            if (coldrow.Count == 0)
+            {
+                return null;
+            }
             //逐行遍历，取出各行的数据
             for (int inti = 0; inti < coldrow.Count; inti++)
             {

@@ -30,6 +30,11 @@ namespace BigHomework
                 return;
             }
             Member member = iqm.getAncestor(mapid);
+            if (member == null)
+            {
+                MessageBox.Show("该族谱中还没有成员！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             AName.Text = member.Name;
             Birth.Text = member.Birth;
             BirthPlace.Text = member.BirthPlace;

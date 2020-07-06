@@ -78,6 +78,7 @@
             // 
             this.Pwd.Location = new System.Drawing.Point(125, 124);
             this.Pwd.Name = "Pwd";
+            this.Pwd.PasswordChar = '*';
             this.Pwd.Size = new System.Drawing.Size(154, 25);
             this.Pwd.TabIndex = 3;
             // 
@@ -162,8 +163,10 @@
             // 
             this.Pwd1.Location = new System.Drawing.Point(125, 166);
             this.Pwd1.Name = "Pwd1";
+            this.Pwd1.PasswordChar = '*';
             this.Pwd1.Size = new System.Drawing.Size(154, 25);
             this.Pwd1.TabIndex = 12;
+            this.Pwd1.TextChanged += new System.EventHandler(this.Pwd1_TextChanged);
             // 
             // button2
             // 
@@ -182,7 +185,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(380, 500);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Pwd1);

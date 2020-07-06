@@ -14,6 +14,10 @@ namespace BLL
         {
             IDBUtil sd = DBUtilFactory.getDBUtil("DBUtilImpl");
             Map map = sd.getMap(id);
+            if (map == null)
+            {
+                return -1;
+            }
             return map.Id;
         }
 
@@ -28,11 +32,15 @@ namespace BLL
         {
             IDBUtil sd = DBUtilFactory.getDBUtil("DBUtilImpl");
             Member father = sd.getMember(name);
+            if (father == null)
+            {
+                return -1;
+            }
             return father.Id;
 
         }
         /*第二版*/
-        public void deletePartner(string name)
+        public void deleteMember(string name)
         {
             IDBUtil dBUtil = DBUtilFactory.getDBUtil("DBUtilImpl");
             List<Partner> list1 = dBUtil.getPartnerList(name);

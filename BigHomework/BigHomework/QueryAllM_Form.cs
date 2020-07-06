@@ -35,7 +35,7 @@ namespace BigHomework
             }
             List<Member> list = iqm.getMemberList(mapid);
             dgv.Rows.Clear();
-            if (list == null)
+            if (list.Count == 0)
             {
                 MessageBox.Show("该族谱还没有添加成员！");
                 return;

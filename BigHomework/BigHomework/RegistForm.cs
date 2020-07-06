@@ -57,5 +57,10 @@ namespace BigHomework
         {
             this.Close();
         }
+
+        private void Pwd1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

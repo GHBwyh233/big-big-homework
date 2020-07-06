@@ -42,6 +42,10 @@ namespace BLL
         {
             IDBUtil dBUtil = DBUtilFactory.getDBUtil("DBUtilImpl");
             Member m1 = dBUtil.getMember(name);
+            if (m1 == null)
+            {
+                return -1;
+            }
             return m1.Id;
         }
 
@@ -50,6 +54,10 @@ namespace BLL
             IDBUtil dBUtil = DBUtilFactory.getDBUtil("DBUtilImpl");
             User u1 = dBUtil.getUser(name);
             Map m2 = dBUtil.getMap(u1.Mapid);
+            if (m2 == null)
+            {
+                return -1;
+            }
             return m2.Id;
         }
 

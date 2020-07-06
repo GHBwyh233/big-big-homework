@@ -24,7 +24,7 @@ namespace BigHomework
             IAccountManager iam = ManagerFactory.getAccountManager("AccountManagerImpl");
             int perLevel = 3;
             string username = Username.Text;
-            if (iam.hasUser(username))
+            if (!iam.hasUser(username))
             {
                 MessageBox.Show("账号不存在！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;

@@ -39,6 +39,10 @@ namespace BLL
             IDBUtil dBUtil = DBUtilFactory.getDBUtil("DBUtilImpl");
             Member m1 = dBUtil.getMember(id);
             Map m2 = dBUtil.getMap(m1.Mapid);
+            if (m2 == null)
+            {
+                return null;
+            }
             return m2.Name;
         }
 
@@ -65,7 +69,12 @@ namespace BLL
         public string getMemberName(int id)
         {
             IDBUtil dBUtil = DBUtilFactory.getDBUtil("DBUtilImpl");
-            return dBUtil.getMember(id).Name;
+            Member member = dBUtil.getMember(id);
+              if (member == null)
+            {
+                return null;
+            }
+            return member.Name;
         }
         public int[] getRelativeId(int num, int id)
         {

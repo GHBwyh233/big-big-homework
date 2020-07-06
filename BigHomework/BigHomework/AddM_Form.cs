@@ -22,8 +22,6 @@ namespace BigHomework
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
                 Member member = new Member();
                 Member m = new Member();
                 IMemberManager imm = ManagerFactory.getMememberManager("MemberMangerImpl");
@@ -36,8 +34,7 @@ namespace BigHomework
                 }
                 StringBuilder sb = new StringBuilder();
                 member.Name = MemberName.Text.Trim();
-                member.Fatherid = imm.getFatherId(FatherName.Text.Trim());
-                member = iqm.queryMember(member.Fatherid);
+                member.Fatherid = m.Id;
                 sb.Append(Year.GetItemText(Year.Items[0]));
                 sb.Append("/");
                 sb.Append(Month.GetItemText(Month.Items[0]));
@@ -56,13 +53,8 @@ namespace BigHomework
                 {
                     member.Sex = '女';
                 }
-                member.Mapid = imm.getMapid(id);
+                member.Mapid = m.Mapid;
                 imm.addMember(member);
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                this.Close();
-            }
             MessageBox.Show("添加成功！");
         }
 

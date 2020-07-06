@@ -12,7 +12,7 @@ namespace BLL
         void addMember(Member member);//添加成员
         int getFatherId(string name);//通过父亲姓名获取父亲id
         int getMapid(int id);//通过成员id来获取族谱的id
-        void deletePartner(string name);//删除该成员name对应的成员，以及该成员的所有配偶
+        void deleteMember(string name);//删除该成员name对应的成员，以及该成员的所有配偶
         void addPartner(Partner partner);//添加配偶
         void modifyMember(int id,Member member);//将该id对应的成员信息更新进数据库
     }
